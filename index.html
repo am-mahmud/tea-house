@@ -17,24 +17,42 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Tea House</title>
 </head>
-<body class="px-8 pt-1 manrope-font">
+<body class="manrope-font mt-6">
     <header>
         <!-- Banner -->
-        <div>
+        <div class="container mx-auto flex flex-col gap-2 justify-center items-center">
+            <!-- Left Side -->
             <div>
-                <h1 class="text-3xl font-bold mb-3">It's good<br>tea time at The<br>Tea House</h1>
-                <p class="text-sm font-light mb-3">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
-                <button class="px-4 py-2 text-sm bg-gradient-to-r from-[#FF8938] to-[#FF0000] text-white rounded-md">Explore More</button>
+                <h1 class="text-3xl font-bold mb-2">It's good<br>tea time at The<br>Tea House</h1>
+                <p class="text-xs font-normal mb-4">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                <button class="w-25 h-8 text-xs bg-gradient-to-r from-[#FF8938] to-[#FF0000] text-white rounded-md">Explore More</button>
             </div>
-            <div class="flex mt-5 justify-center items-center">
-                <div class="transform -rotate-15 translate-x-4">
-                    <img class="h-50" src="./assets/images/tea-5.png" alt="">
+
+            <!-- Right Side -->
+             <div>
+                <!-- Banner Drinks Image -->
+                <div class="flex mt-5 justify-center items-center">
+                    <div class="transform -rotate-16 -translate-x-1">
+                        <img class="h-44" src="./assets/images/tea-5.png" alt="">
+                    </div>
+                    <div class="transform rotate-20 -translate-x-3">
+                        <img class="h-38" src="./assets/images/tea-6.png" alt="">
+                    </div>
                 </div>
-                <div class="transform rotate-15 -translate-x-4">
-                    <img class="h-50" src="./assets/images/tea-6.png" alt="">
+
+                <!-- Rating Card -->
+                <div class="flex gap-2 max-w-35 px-1.5 py-1.5 bg-white shadow-lg rounded-lg text-xs -translate-y-12 -translate-x-4 justify-center items-center">
+                    <div>
+                        <i class="fa-solid fa-star animate-pulse" style="color: #FFD43B;"></i>
+                    </div>
+                    <div>
+                        <h1 class="font-bold">5.00</h1>
+                        <p class="text-gray-500">Trust Pilot Ratings</p>
+                    </div>
                 </div>
-            </div>
-            <div class="flex gap-2 max-w-35 px-2 py-2 bg-white shadow-lg rounded-lg text-xs -translate-y-10 translate-x-1">
+             </div>
+            
+            <!-- <div class="flex gap-2 max-w-35 px-2 py-2 bg-white shadow-lg rounded-lg text-xs -translate-y-10 translate-x-1">
                 <div>
                     <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                 </div>
@@ -42,7 +60,7 @@
                     <h1>5.00</h1>
                     <p>Trust Pilot Ratings</p>
                 </div>
-            </div>
+            </div> -->
         </div>
 
     </header>
